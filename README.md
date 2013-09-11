@@ -2,7 +2,7 @@
 
 This is a [Bootstrap](http://getbootstrap.com/) theme for [StyleDocco](http://jacobrask.github.com/styledocco/). StyleDocco generates documentation and style guide documents from your stylesheets.
 
-!(https://github.com/konitter/styledocco-bootstrap-theme/raw/master/img/screen.png)
+![styledocco-bootstrap-theme](https://github.com/konitter/styledocco-bootstrap-theme/raw/master/img/screen.png)
 
 ## How to apply this theme
 
