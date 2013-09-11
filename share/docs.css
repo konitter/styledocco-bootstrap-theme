@@ -1,0 +1,73 @@
+/*------------------------------------*\
+    StyleDocco Bootstrap styles
+\*------------------------------------*/
+.bs-docs-nav .navbar-nav > .dropdown > a:hover .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+
+.bs-docs-nav .navbar-nav > .dropdown > a .caret {
+  border-top-color: #999;
+  border-bottom-color: #999;
+}
+
+.bs-docs-nav .navbar-nav > li > .dropdown-menu {
+  text-shadow: none;
+}
+
+.bs-docs-nav .navbar-nav > .open > a,
+.bs-docs-nav .navbar-nav > .open > a:hover,
+.bs-docs-nav .navbar-nav > .open > a:focus {
+  background-color: #463265;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.row h1:first-of-type {
+  padding-top: 0;
+}
+
+.resizeable {
+  padding: 5px 15px 5px 0;
+  resize: vertical;
+  overflow: auto;
+}
+
+.bs-docs-section > h1 {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.bs-example {
+  padding-right: 0;
+  background: #FFF;
+}
+
+.bs-example iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 0;
+}
+
+.preview-code {
+  width: 100%;
+  line-height: 1.428571429;
+  color: #333;
+  font-size: 13px;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  resize: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.bs-sidebar .nav > li > a:not(.lv1) {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 30px;
+  font-size: 90%;
+}
