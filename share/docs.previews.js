@@ -69,7 +69,12 @@ iframeEl.src = 'data:text/html,';
 bodyEl.appendChild(iframeEl);
 iframeEl.addEventListener('load', function() {
   var support = { sameOriginDataUri: false };
-  if (this.contentDocument) support.sameOriginDataUri = true;
+  try {
+    this.contentDocument;
+    if (!this.contentDocument) support.sameOriginDataUri = false;
+  } catch (e) {
+    support.sameOriginDataUri = false;
+  }
   this.parentNode.removeChild(this);
   // Loop through code textareas and render the code in iframes.
   forEach(bodyEl.getElementsByTagName('textarea'), function(codeEl, idx) {

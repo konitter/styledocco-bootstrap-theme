@@ -1,6 +1,9 @@
 !!! 5
 html
   head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     title
       if title && project.name
         #{title} | #{project.name}
@@ -8,9 +11,8 @@ html
         #{project.name}
       else if title
         #{title}
-    meta(charset='utf-8')
-    link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css')
-    link(rel='stylesheet', href='http://getbootstrap.com/docs-assets/css/docs.css')
+    link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
+    link(rel='stylesheet', href='http://getbootstrap.com/assets/css/docs.min.css')
     if (resources.docs && resources.docs.css)
       style !{resources.docs.css}
     if (resources.previews && resources.previews.js)
@@ -18,7 +20,7 @@ html
     if (resources.previews && resources.previews.css)
       style(type="text/preview") !{resources.previews.css}
   body
-    header.navbar.navbar-inverse.navbar-fixed-top.bs-docs-nav(role='banner')
+    header.navbar.navbar-static-top.bs-docs-nav#top(role='banner')
       .container
         .navbar-header
           button.navbar-toggle(type='button', data-toggle='collapse', data-target='.bs-navbar-collapse')
@@ -35,7 +37,7 @@ html
                 - if (folder === './') folder = 'files'
                 - dropdownid++
                 li.dropdown
-                  a.dropdown-toggle(href="#",data-toggle="dropdown",unselectable="on") #{folder}&nbsp;
+                  a.dropdown-toggle(href="#", data-toggle="dropdown") #{folder}&nbsp;
                     b.caret
                   ul.dropdown-menu
                     each link in links
@@ -43,17 +45,29 @@ html
               else
                 each link in links
                   li: a(href="#{link.href}") #{link.name}
+    #content.bs-docs-header
+      .container
+        h1
+          if title && project.name
+            #{title}
+          else if project.name
+            #{project.name}
     .container.bs-docs-container
         .row
-          .col-md-3
-            .bs-sidebar.hidden-print.affix(role='complementary')
-              ul.nav.bs-sidenav
           .col-md-9(role='main')
              each section, i in sections
               .bs-docs-section
                 !{section.docs}
+          .col-md-3
+            .bs-docs-sidebar.hidden-print(role='complementary')
+              ul.nav.bs-docs-sidenav
+              a.back-to-top(href="#top") Back to top
+    footer.bs-docs-footer(role="contentinfo")
+      .container
+        p &copy; #{project.name}
     if (resources.docs && resources.docs.js)
       script !{resources.docs.js}
-    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
-    script(src='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script(src='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js')
+    script(src='http://getbootstrap.com/assets/js/docs.min.js')
 <!-- Generated with StyleDocco (http://jacobrask.github.com/styledocco). -->

@@ -1,7 +1,7 @@
 /*------------------------------------*\
     StyleDocco Bootstrap styles
 \*------------------------------------*/
-.bs-docs-nav .navbar-nav > .dropdown > a:hover .caret {
+/* .bs-docs-nav .navbar-nav > .dropdown > a:hover .caret {
   border-top-color: #fff;
   border-bottom-color: #fff;
 }
@@ -19,15 +19,15 @@
 .bs-docs-nav .navbar-nav > .open > a:hover,
 .bs-docs-nav .navbar-nav > .open > a:focus {
   background-color: #463265;
-}
+} */
 
 .row {
   margin-bottom: 20px;
 }
 
-.row h1:first-of-type {
+/* .row h1:first-of-type {
   padding-top: 0;
-}
+} */
 
 .resizeable {
   padding: 5px 15px 5px 0;
@@ -35,11 +35,11 @@
   overflow: auto;
 }
 
-.bs-docs-section > h1 {
+/* .bs-docs-section > h1 {
   padding-bottom: 9px;
   margin: 40px 0 20px;
   border-bottom: 1px solid #eee;
-}
+} */
 
 .bs-example {
   padding-right: 0;
