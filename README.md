@@ -4,6 +4,8 @@ This is a [Bootstrap](http://getbootstrap.com/) theme for [StyleDocco](http://ja
 
 **Bootstrap v3.1.1 support.**
 
+![styledocco-bootstrap-theme](https://github.com/konitter/styledocco-bootstrap-theme/raw/master/img/screen.png)
+
 ## How to apply this theme
 
 1. Install StyleDocco. Type ``npm install styledocco`` or ``npm install -g styledocco`` for global CLI.

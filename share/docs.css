@@ -1,49 +1,8 @@
 /*------------------------------------*\
     StyleDocco Bootstrap styles
 \*------------------------------------*/
-/* .bs-docs-nav .navbar-nav > .dropdown > a:hover .caret {
-  border-top-color: #fff;
-  border-bottom-color: #fff;
-}
-
-.bs-docs-nav .navbar-nav > .dropdown > a .caret {
-  border-top-color: #999;
-  border-bottom-color: #999;
-}
-
-.bs-docs-nav .navbar-nav > li > .dropdown-menu {
-  text-shadow: none;
-}
-
-.bs-docs-nav .navbar-nav > .open > a,
-.bs-docs-nav .navbar-nav > .open > a:hover,
-.bs-docs-nav .navbar-nav > .open > a:focus {
-  background-color: #463265;
-} */
-
-.row {
-  margin-bottom: 20px;
-}
-
-/* .row h1:first-of-type {
-  padding-top: 0;
-} */
-
-.resizeable {
-  padding: 5px 15px 5px 0;
-  resize: vertical;
-  overflow: auto;
-}
-
-/* .bs-docs-section > h1 {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
-  border-bottom: 1px solid #eee;
-} */
-
-.bs-example {
-  padding-right: 0;
-  background: #FFF;
+.bs-docs-header h1 {
+  text-transform: capitalize;
 }
 
 .bs-example iframe {
@@ -65,9 +24,17 @@
   word-wrap: break-word;
 }
 
-.bs-sidebar .nav > li > a:not(.lv1) {
-  padding-top: 3px;
-  padding-bottom: 3px;
+.bs-docs-sidebar .nav>li>a:not(.lv1) {
+  padding-top: 1px;
+  padding-bottom: 1px;
   padding-left: 30px;
-  font-size: 90%;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.bs-docs-sidebar .nav>.active>a:not(.lv1),
+.bs-docs-sidebar .nav>.active:hover>a:not(.lv1),
+.bs-docs-sidebar .nav>.active:focus>a:not(.lv1) {
+  padding-left: 28px;
+  font-weight: 500;
 }

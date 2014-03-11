@@ -133,6 +133,11 @@ var addIframe = function(codeEl, support, iframeId) {
   };
   codeEl.addEventListener('keypress', codeDidChange);
   codeEl.addEventListener('keyup', codeDidChange);
+  /*var highlight;
+  highlight = document.createElement('div');
+  highlight.appendChild(codeEl);
+  highlight.className = 'highlight';
+  codeEl.parentNode.insertBefore(previewEl, highlight);*/
   codeEl.parentNode.insertBefore(previewEl, codeEl);
 };
 

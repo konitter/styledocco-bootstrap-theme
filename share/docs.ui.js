@@ -46,6 +46,7 @@
     if (!previewList) return;
 
     forEach(previewList, function(el) {
+      // el.firstChild.classList.add('highlight');
       el.classList.add('highlight');
     });
 
